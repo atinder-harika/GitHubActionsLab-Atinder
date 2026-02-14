@@ -14,7 +14,7 @@ jobs:
         run: uname -a
       - name: Create and Show File
         run: |
-          echo "Running on Ubuntu" > os_info.txt
+          echo "Running on Ubuntu OS" > os_info.txt
           cat os_info.txt
 
   windows-job:
@@ -25,7 +25,7 @@ jobs:
         run: systeminfo
       - name: Create and Show File
         run: |
-          echo "Running on Windows" > os_info.txt
+          echo "Running on Windows OS" > os_info.txt
           type os_info.txt
 
   macos-job:
@@ -36,6 +36,6 @@ jobs:
         run: uname -a
       - name: Create and Show File
         run: |
-          echo "Running on macOS" > os_info.txt
+          echo "Running on macOS OS" > os_info.txt
           cat os_info.txt
 
